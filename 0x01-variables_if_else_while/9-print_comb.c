@@ -9,13 +9,17 @@ int main(void)
 {
 	int o;
 
-	for (o = 48; o < 58; o++)
-		putchar(o);
-			if (o != 47)
+	for (o = 0; o < 10; o++)
+	{
+
+		putchar(o + '0');
+			if (o < 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+	}
+
 	putchar('\n');
 	return (0);
 }
